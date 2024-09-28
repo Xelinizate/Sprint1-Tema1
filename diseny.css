@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid white;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    justify-content: space-around;
+    align-content: flex-start;
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(81, 78, 113);
+    margin: 10px;
+    font-size: 10px;
+    text-align: left;
+
+}
+
+.logo{
+    font-size: 2rem;
+    background-color: rgb(123, 2, 2);
+    padding: 10px;
+    flex: 0 1 auto;
+
+
+}
+
+.nav{
+    font-size: 2rem;
+    background-color: rgb(123, 2, 2);
+    padding: 10px;
+    flex: 3 1 auto;
+    
+
+
+}
+
+.social{
+    font-size: 2rem;
+    background-color: rgb(123, 2, 2);
+    padding: 10px;
+    flex: 0 1 auto;
+
+
+}
+
+.banner{
+    font-size: 4rem;
+    background-color: rgb(222, 197, 11);
+    border: 5px rgb(133, 88, 5);
+    padding: 10px;
+    flex: auto;
+    align-self: baseline;
+
+
+}
+
+.contenedor{
+    display: grid;
+
+
+}

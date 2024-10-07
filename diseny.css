@@ -110,9 +110,12 @@
     .menu{
         flex-direction: column;
         height: auto;
+        justify-content: center;
 
     }
+
     .aside{
+        flex-direction: column;
         display: flex;
         justify-content: center;
     }

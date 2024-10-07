@@ -1,7 +1,15 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+
+
 *{
     margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
+
 }
 .padre{
     display: flex;
@@ -13,31 +21,35 @@
     background: #000;
     display: flex;
     flex-flow: column nowrap;
+   
 }
 
     .menu{
         background: grey;
         display: flex;
-        flex-flow: column nowrap;
-        height: 100px;
+        flex-flow: row nowrap;
         align-items: center;
+       
 
     }
 
         .logo{
             background: red;
             flex: 1 1 auto;
+            align-content: center;
         }
 
         .nav{
             background: red;
             flex: 5 1 auto;
+            align-content: center;
 
         }
 
         .social{
             background: red;
             flex: 1 1 auto;
+            align-content: center;
         }
     
      .banner{
@@ -51,16 +63,19 @@
 .section{
     background: #000;
     display: flex;
+    
 }
     .articles{
         background: blue;
         flex: 2 1 auto;
         display: flex;
         flex-flow: row wrap;
+        
     }
         .article{
             background: blueviolet;
             flex: 1 1 40%;
+            gap: 1rem;
         }
         .navega{
             background: green;
@@ -76,15 +91,18 @@
         }
 
 .footer{
-    background: #000;
+    background: black;
     display: flex;
-    justify-content: center;
+    align-items: center;
 
 }
     .pie{
-        background: brown;
-        width: 300px;
+        background: rgb(217, 114, 114);
+        flex: 1 1 100px;
+        
+    
     }
+
 @media all and (max-width: 800px){
     .section{
         flex-direction: column;

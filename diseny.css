@@ -27,8 +27,7 @@
     .menu{
         background: grey;
         display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
+        flex-flow: row wrap;
        
 
     }
@@ -108,11 +107,20 @@
         flex-direction: column;
     }
     .menu{
+        flex-flow: row wrap;
         flex-direction: column;
-        height: auto;
-        justify-content: center;
-
     }
+
+    .logo{
+        flex: 0 1 auto;
+    }
+    .nav{
+        flex: 0 1 auto;
+    }
+    .social{
+        flex: 0 1 auto;
+    }
+
 
     .aside{
         flex-direction: column;
